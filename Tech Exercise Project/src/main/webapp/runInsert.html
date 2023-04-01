@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <style>
+        td {
+            text-align: left;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        header {
+            background-color: #CCCCCC;
+            color: black;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        body {
+            background-color: #EEEEEE;
+            color: black;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        section {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            background-color: #CCCCCC;
+            color: black;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Insert Run Entry </h1>
+    </header>
+
+    <section>
+        <h1>Fill Run Data:</h1>
+
+        <form action="RunInsert" method="POST">
+
+            <table>
+                <tr>
+                    <td>Runner Name:</td>
+                    <td><input type="text" name="username" /></td>
+                </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="text" name="date" /></td>
+                </tr>
+                <tr>
+                    <td>Time of Day:</td>
+                    <td><input type="text" name="daytime" /></td>
+                </tr>
+                <tr>
+                    <td>Distance (MI):</td>
+                    <td><input type="text" name="distance" /></td>
+                </tr>
+                <tr>
+                    <td>Run Duration:</td>
+                    <td><input type="text" name="runtime" /></td>
+                </tr>
+                <tr>
+                    <td>Route:</td>
+                    <td><input type="text" name="route" /></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <input type="submit" value="Submit" />
+        </form>
+
+    </section>
+
+    <footer>
+        <a href="/personalProject/runSearch.html">Search Run Entries</a> <br>
+    </footer>
+</body>
+
+</html>
